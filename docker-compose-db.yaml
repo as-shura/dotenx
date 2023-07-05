@@ -22,7 +22,7 @@ services:
             - "postgres_data:/var/lib/postgresql/data/"
             - "./pg_hba.conf:/etc/postgresql/pg_hba.conf"
             - "./postgresql.conf:/etc/postgresql/postgresql.conf"
-        command: postgres -D /etc/postgresql -c config_file=/etc/postgresql/postgresql.conf hba_file=/etc/postgresql/pg_hba.conf
+        command: postgres -D /etc/postgresql -c config_file=/etc/postgresql/postgresql.conf -c hba_file=/etc/postgresql/pg_hba.conf
         ports:
             - "5434:5432"
         expose:
