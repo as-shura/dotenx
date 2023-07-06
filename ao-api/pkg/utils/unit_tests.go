@@ -44,8 +44,8 @@ func SetUpRouter() *gin.Engine {
 func InitializeDB() (*dbPkg.DB, error) {
 	host := "localhost"
 	port := 5432
-	user := "psql_user"
-	password := "psql_password"
+	user := "postgres"
+	password := "postgres"
 	dbName := "ao"
 	extras := "sslmode=disable"
 	driver := "postgres"
